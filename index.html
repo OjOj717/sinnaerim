@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111e22">
+  <meta name="description" content="여덟 번의 선택, 당신에게 찾아올 하나의 신. 한국 신화에서 영감을 얻은 이야기형 성격테스트 신내림.">
+  <meta property="og:title" content="신내림 | 신을 부르는 여덟 갈림길">
+  <meta property="og:description" content="당신은 무엇을 지키며 여기까지 왔나요? 여덟 갈림길 끝에서 당신의 수호신을 만나보세요.">
+  <title>신내림 | 신을 부르는 여덟 갈림길</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/data.js"></script>
+  <script defer src="js/art.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <button class="brand" id="home-button" aria-label="신내림 처음으로">신내림<span>神</span></button>
+    <button class="text-button" id="about-button">전시 이야기 <span aria-hidden="true">↗</span></button>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer"><span>신을 부르는 여덟 갈림길</span><span>학교 발표용 프로토타입</span></footer>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-top"><span class="eyebrow">ABOUT THE EXPERIENCE</span><button class="icon-button" id="close-about" aria-label="닫기">×</button></div>
+    <h2 id="about-title">잊힌 신들이,<br>당신을 찾아왔다.</h2>
+    <p>「신내림」은 한국의 신화와 굿 문화에서 영감을 얻은 몰입형 전시 기획입니다. 이 페이지는 전시 속 ‘청신 복도’를 휴대폰으로 체험할 수 있도록 만든 학교 발표용 프로토타입입니다.</p>
+    <p>버추얼 무당이 여덟 갈림길을 안내합니다. 선택이 끝나면 당신의 선택과 닮은 신이 한마디를 건넵니다.</p>
+    <div class="notice"><strong>전승과 창작을 구분합니다.</strong><p>오방색 배치, 성격 유형, 대사와 신탁은 전시를 위한 현대적 창작입니다. 실제 종교 의례나 검증된 심리검사가 아닙니다. 안내 캐릭터도 가상의 인물이며, 전승자의 실제 음성은 사용하지 않았습니다.</p></div>
+    <p class="small">이름·연락처를 입력받지 않으며 답변을 별도 서버로 전송하지 않습니다. 진행 상태는 이 브라우저 탭에만 임시 저장됩니다. 개인별 관객 집계 기능은 없습니다.</p>
+    <button class="button secondary" id="clear-session">내 진행 기록 지우기</button>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
